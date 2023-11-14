@@ -7,7 +7,6 @@ public class Shape {
     protected int a;
     protected int b;
     protected int c;
-
     public static void main(String[] args) {
         Shape[] shapes = new Shape[7];
         shapes[0] = new Triangle(3,4,5,"white","blue");
