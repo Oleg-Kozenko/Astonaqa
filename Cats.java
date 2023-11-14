@@ -2,13 +2,11 @@ public class Cats {
     public int hunger;
     public boolean fullness;
     public int number;
-
     public Cats(int number, int hunger) {
         this.hunger = hunger;
         this.number = number;
         fullness = false;
     }
-
     public void eat(Plate plate) {
         if (plate.getFood() >= hunger) {
             fullness = true;
@@ -35,23 +33,18 @@ public class Cats {
         }
     }
 }
-
 class Plate {
     private int food;
-
     Plate(int food) {
         this.food = food;
     }
-
     void addFood(int foodplus) {
         food += foodplus;
         System.out.println("В тарелку насыпали " + foodplus + " еды");
     }
-
     public int getFood() {
         return food;
     }
-
     public void setFood(int food) {
         this.food = food;
     }
