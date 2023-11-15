@@ -18,12 +18,12 @@ public class AppData {
         }
         byte[] buf = new byte[255];
         byte[] outData = data1.toString().getBytes();
-        try (FileOutputStream out = new FileOutputStream("C:\\test.scv")) {
+        try (FileOutputStream out = new FileOutputStream("test.scv")) {
             out.write(outData);
         } catch (IOException e) {
             e.printStackTrace();
         }
-        try (FileInputStream in = new FileInputStream("C:\\test.scv")) {
+        try (FileInputStream in = new FileInputStream("test.scv")) {
             int x;
             while ((x = in.read(buf)) > 0) {
                 for (int i = 0; i < x; i++) {
